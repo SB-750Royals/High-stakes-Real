@@ -9,7 +9,7 @@ void drivehari() {
     int rightY = controller.get_analog(pros::E_CONTROLLER_ANALOG_RIGHT_X);
 
     // move the robot
-    chassis.curvature(rightY,  leftY);
+    chassis.curvature(-rightY,  -leftY);
 
     // delay to save resources
     pros::delay(25);
